@@ -51,7 +51,7 @@ def main():
         while True:
             client_socket, addr = server_socket.accept()
             with client_socket:
-                print(f"Connection from {addr}")
+                print(f"Connection from {addr}\n")
                 request = client_socket.recv(1024).decode('utf-8')
                 print(f"Request:\n{request}")
 
